@@ -1,0 +1,29 @@
+
+#write a python program to calculate avg salary about all salaries
+#using for loop
+list_of_salaries=[50000,60000,45000,35000,89000,32000,5000,6000]
+total_sal= 0
+for k in list_of_salaries:
+    total_sal += k
+print(total_sal/len(list_of_salaries))
+
+
+#write a python program to calculate
+    # total orders of items from the online app
+products_prices=[56.3,489.50,78.65,50.00,102.00]
+total_orders = 0
+for k in products_prices:
+    total_orders += k
+print(total_orders)
+from functools import total_ordering
+
+# write a python program usisg for loop to
+# calculate interest for multiple customers at bank
+bank_balances = [5000, 6000, 7000, 9000, 10000]
+rate_of_interest = 0.5
+total_interest = 0
+for balance in bank_balances:
+    interest = balance * rate_of_interest
+    total_interest += interest
+    print("Total Interest Earned:", total_interest)
+    print("Interest earned on balance {balance}: {interest}"
