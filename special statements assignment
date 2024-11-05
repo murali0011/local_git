@@ -19,3 +19,23 @@ for i in list_of_series:
       print("fake note detected")
       break
     print(i)
+
+
+
+#pass statnment
+#create abstrat or empty class
+class smatr_watch:
+    pass
+
+class drone:
+    pass
+
+#create abstract or empty method/function
+def man_csn_fly(p1, p2, p3, pn):
+    pass
+def bike_can_fly(p1, p2, p3, pn):
+    pass
+
+#create abstract or empty loop
+while(10<5):
+    pass
