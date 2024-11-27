@@ -1,0 +1,10 @@
+USING "WITH" KEYWORD COULDN'T USE CLOSE FUCTION
+with open("C:/users/public/murali.txt","w") as fptr:
+    fptr.write("welcome")
+
+FILES DEMO3
+fptr=open("C:/users/public/nov22.txt","w")
+#write welcome message 10 times
+for i in range(10):
+    fptr.write("welcome to the world\n")
+print("text has been created in the list")
