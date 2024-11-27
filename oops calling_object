@@ -1,0 +1,14 @@
+from oops_concepts.class_object_demo1 import arithmetic_op
+obj=arithmetic_op() #obj is an object for the class arithemetic_op
+#to access class method we must use obj.method name by passing appropriate parameters
+obj.find_even([2,5,8,10,12])
+r1=obj.sum(10,20)
+print("sum of two numbers:",r1)
+r2=obj.mul(10,20)
+print("mul of two numbers",r2)
+r3=obj.sub(1000,999)
+print("sub of two numbers",r3)
+r4=obj.division(200,10)
+print("division of two numbers",r4)
+r5=obj.fact(5)
+print("factorial numbers",r5)
