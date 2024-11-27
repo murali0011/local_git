@@ -1,0 +1,27 @@
+DATABASE.CONNECTION
+import pymysql
+
+try:
+    query="CREATE DATABASE customer3"
+    con=pymysql.connect(host="localhost",user="root",password="W7301@jqir#")
+    cur=con.cursor()
+    cur.execute(query)
+    con.commit()
+    print("database created successfully")
+    con.close()
+except:
+    print("database could not be created")
+
+RUNTIME.ERROR
+
+file="C:/Users/Public/japan.txt"
+
+def file_read(file):
+    try:
+        with open(file,"r") as fptr:
+            for line in fptr:
+                l=line.upper()
+                print(l)
+    except IOError:
+        print("unable read text as file does not exist")
+file_read(file) #function call
