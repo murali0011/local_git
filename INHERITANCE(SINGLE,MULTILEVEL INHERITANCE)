@@ -1,0 +1,33 @@
+SINGLE INHERITANCE
+class base_class:
+    def base_method(self):
+        print("hey iam base class")
+    def base_method2(self):
+        print("hey iam base class method2")
+class sub_class(base_class):
+    def subclass_method(self):
+        print("hey iam sub class method")
+
+obj=sub_class()
+obj.base_method()
+obj.base_method2()
+obj.subclass_method()
+
+MULTILEVEL OPERATION
+class a:
+    x=1000
+    def a_method(self):
+        print("value of a:",self.x)
+
+class b(a):
+    y=2000
+    def b_method(self):
+        print("value of b:",self.y)
+class c(b):
+    z=3000
+    def c_method(self):
+        print("value of c:",self.z)
+obj=c()
+obj.a_method()
+obj.b_method()
+obj.c_method()
