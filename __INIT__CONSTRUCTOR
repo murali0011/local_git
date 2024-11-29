@@ -1,0 +1,32 @@
+EMPLOYEE MANAGEMENT USING STATIC,LOCAL AND INSTANCE VARIABLES?
+class emp_mgmt:
+    dept="sales"
+    dept2="loan"
+    dept3="marketing"
+    def __init__(self,empID):
+        self.empID=empID
+
+    def emp_details(self):
+        name="anu"
+        designation="manager"
+        position="senior"
+        print("emp details:",self.empID,name,designation,position)
+    def emp_salary_details(self):
+        basic=18000.00
+        hra=3000.00
+        bonus=5000.00
+        print("emp salary details:",self.empID,basic,hra,bonus)
+    def emp_deductions(self):
+        lop=2
+        insurance=400
+        tds=200
+        ITD=9000.00
+        print("emp deductions:",self.empID)
+
+
+CALLING EMPLOYEE MANAGEMENT
+from oops_concepts.emp_mgnt_three_variables import emp_mgmt
+obj4=emp_mgmt(1122)
+obj4.emp_details()
+obj5=emp_mgmt(66553)
+obj5.emp_salary_details()
