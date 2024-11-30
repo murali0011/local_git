@@ -1,0 +1,101 @@
+MULTIPLE INHERITANCE
+class x:
+    fixed_assests=1000000
+    def x_method(self):
+        print("x method:",self.fixed_assests)
+
+class y:
+    y_fixed_assests = 2000000
+
+    def y_method(self):
+        print("y method:", self.y_fixed_assests)
+
+class p:
+    p_fixed_assests = 3000000
+
+    def p_method(self):
+        print("p method:", self.p_fixed_assests)
+
+class z(x,y,p):
+    z_bank_bal=500000
+    def z_method(self):
+        print("z method:",self.z_bank_bal)
+
+CALLING MULTIPLE INHERITANCE
+from oops_concepts.inheritance_concept.multiple_inhertiance import z
+obj=z()
+obj.x_method()
+obj.y_method()
+obj.p_method()
+obj.z_method()
+
+HEIRACHY INHERITANCE
+class a:
+    fixed_amount=20000
+    def a_method(self):
+        print("a method",self.fixed_amount)
+class b(a):
+    b_fixed_amount=30000
+    def b_method(self):
+        print("b method",self.b_fixed_amount)
+class c(a):
+    c_fixed_amount = 40000
+    def c_method(self):
+        print("c method", self.c_fixed_amount)
+class d(a):
+    d_fixed_amount = 30000
+    def d_method(self):
+        print("d method", self.d_fixed_amount)
+class e(a):
+    e_fixed_amount=70000
+    def e_method(self):
+        print("e_method",self.e_fixed_amount)
+class b1(b):
+    b1_bank_balance=500000
+    def b1_method(self):
+        print("b1 method",self.b1_bank_balance)
+class b2(b):
+    b2_bank_balance=600000
+    def b2_method(self):
+        print("b2 method",self.b2_bank_balance)
+class d1(d):
+    d1_bank_withdraw_amount=20000
+    def d1_method(self):
+        print("d1 method",self.d1_bank_withdraw_amount)
+class d2(d):
+    d2_bank_balance =10000
+    def d2_method(self):
+        print("d2 method", self.d2_bank_balance)
+class d21(d1):
+    d21_bank_deposit_amount=30000
+    def d21_method(self):
+        print("d21_method",self.d21_bank_deposit_amount)
+class e1(e):
+    e1_bank_deposit_amount=30000
+    def e1_method(self):
+        print("e1_method",self.e1_bank_deposit_amount)
+class e2(e):
+    e2_bank_withdraw_amount=10000
+    def e2_method(self):
+        print("e2_method",self.e2_bank_withdraw_amount)
+class e21(e1):
+    e21_bank_balance_amount=30000
+    def e21_method(self):
+        print("e21_method",self.e21_bank_balance_amount)
+
+obj=b1()
+obj.b_method()
+obj.a_method()
+obj.b1_method()
+obj=d1()
+obj.d_method()
+obj.a_method()
+obj=e1()
+obj.e_method()
+obj.a_method()
+
+
+
+
+
+
