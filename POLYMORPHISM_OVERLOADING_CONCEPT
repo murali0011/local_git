@@ -1,0 +1,56 @@
+METHOD_OVERLOADING_ARGUMENTS
+class test:
+    def sum(self):
+        print("there are no argument")
+    def sum(self,a,b):
+        print(a+b)
+    def sum(self,a,b,c):
+        print(a+b+c)
+    def sum(self,a,b,c,d):
+        print(a+b+c+d)
+
+obj=test()
+obj.sum(10,20,30,40)
+
+METHOD_OVERLOADING_DEFAULT_ARGUMENTS
+class test:
+    def sum(self,a=None,b=None,c=None):
+        if(a!=None and b!=None and c!=None):
+            print("three argts: ",a+b+c)
+        elif(a!=None and b!=None):
+            print("two argts:",a+b)
+        else:
+            print("to perform sum min two aperands and operator is mandatory")
+obj=test()
+obj.sum(10,20,30)
+
+METHOD_OVERLOADING_VARIABLE_ARGUMENTS
+class test:
+    def sum(self,*vec):
+        total=0
+        for i in vec:
+            total+=i
+        print(total)
+ob=test()
+ob.sum(12,3,4,5,6,7,8,9)
+
+CONSTRUCTOR_OVERLOADING_ARGUMENTS
+class test:
+    def __init__(self):
+        print("no arg constructor")
+    def __init__(self,a):
+        print("one arg constructor")
+    def __init__(self,a,b):
+        print("two arg constructor")
+
+obj=test(10,20)
+
+CONSTRUCTOR_OVERLOADING_DEFAULT_ARGUMENTS
+class test:
+    def __init__(self,a=None,b=None,c=None):
+        print("constructor with 1|2|3 numbers of arguments")
+
+t1=test()
+t1=test(1)
+t1=test(1,2,3)
+t1=test(1,2)
